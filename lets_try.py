@@ -5,14 +5,15 @@ def f(x):
     f = math.pow(x,3) + 2*math.pow(x,2) - 3*x - 1
     return f
   
-print("basado en el siguiente input de ejemplo")
-print("Input de ejemplo: regulaFalsi(1, 2, 0.0004, 100)")
+print("-- dada la funcion  math.pow(x,3) + 2*math.pow(x,2) - 3*x - 1")
+print("-- y basado en el siguiente input de ejemplo")
+print("-- Input de ejemplo: regulaFalsi(1, 2, 0.0004, 100)")
   
 def regulaFalsi(a,b,TOL,N):
     i = 1
     FA = f(a)
      
-    print("%-20s %-20s %-20s %-20s %-20s" % ("n","a_n","b_n","p_n","f(p_n)"))
+    print("%-20s %-20s %-20s %-20s %-20s" % ("n","x_i","x_u","x_m","f(x_m)"))
       
     while(i <= N):
         p = (a*f(b)-b*f(a))/(f(b) - f(a))
